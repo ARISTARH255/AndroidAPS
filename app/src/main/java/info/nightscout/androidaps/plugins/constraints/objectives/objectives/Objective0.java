@@ -53,7 +53,7 @@ public class Objective0 extends Objective {
 
             @Override
             public boolean shouldBeIgnored() {
-                return !virtualPumpPlugin.isEnabled(PluginType.PUMP);
+                return true;// !virtualPumpPlugin.isEnabled(PluginType.PUMP);
             }
         });
         tasks.add(new Task(R.string.objectives_pumpstatusavailableinns) {
